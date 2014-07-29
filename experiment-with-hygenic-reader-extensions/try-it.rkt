@@ -1,4 +1,4 @@
-#lang experiment-with-hygenic-reader-extensions-2
+#lang experiment-with-hygenic-reader-extensions
 (require (only-in "lang/reader.rkt")
          (for-syntax racket/base
                      (only-in "lang/reader.rkt")
