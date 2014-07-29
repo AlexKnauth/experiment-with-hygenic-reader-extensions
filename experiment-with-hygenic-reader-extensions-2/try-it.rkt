@@ -12,5 +12,5 @@
     (syntax-case stx ()
       [(shift-phase-level stx-expr shift)
        (syntax-shift-phase-level #'stx-expr (syntax-local-eval #'shift))]))
-  (displayln (shift-phase-level $ 1))
+  (displayln (shift-phase-level $ (syntax-local-phase-level)))
   )
