@@ -16,7 +16,7 @@
              (define-syntax (GENSYM stx)
                (syntax-case stx ()
                  [(_ in src line col pos) BODY ...]))
-             (provide GENSYM)
+             ;(provide GENSYM) ; don't have to provide GENSYM
              (define NAME
                (case-lambda
                  [(ch in)
